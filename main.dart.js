@@ -3517,9 +3517,9 @@ t.appendChild(i)
 h=$.u
 h.toString
 if(typeof h!=="number")return h.cV()
-g=h/2480*471
+g=h/1280*243
 f=h*0.8
-e=g+f/2138*208
+e=g+f/1280*125
 d=y*1.5
 c=u.createElement("div")
 r=c.style
