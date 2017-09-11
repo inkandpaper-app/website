@@ -5,7 +5,7 @@
     <meta name="description" content="Ink&amp;Paper is an Android note-taking app.">
     <meta name="viewport" content="width=device-width, user-scalable=yes">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./images/icon.png ">
+    <link rel="icon" href="images/ink&amp;paper_icon.png ">
     <script defer="" src="main.dart.js"></script>
     
 
@@ -14,10 +14,12 @@
 window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 ga('create', 'UA-106162515-1', 'auto');
   ga('send', 'pageview');
-</script>
+
+
+
+    </script>
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
     <!-- End Google Analytics -->
-
 
     <style type="text/css" media="screen, print">
     @font-face {
@@ -27,80 +29,83 @@ ga('create', 'UA-106162515-1', 'auto');
         src: url('./fonts/Poiret One Regular.ttf')  format('truetype');
     }
     body { font-family: "Poiret One", serif }
+
     </style>
 
 </head>
 
 <body>
-<div style="position: relative; width: 1920px; height: 95px; z-index: 2; background-color: rgba(200, 200, 200, 1);">
-    <a href="http://play.google.com/store/apps/details?id=com.inkandpaper.trial"><img src="./images/google_play_logo_color.png" style="height: 95px; position: absolute; top: 0px; right: 261.725px;">
-        </a><a href="http://www.amazon.com/gp/mas/dl/android?p=com.inkandpaper.trial">
-            <img src="./images/amazon_logo_color.png" style="height: 95px; position: absolute; top: 0px; right: 144.4px;">
-            </a><a href="http://www.samsungapps.com/appquery/appDetail.as?appId=com.inkandpaper.trial">
-                <img src="./images/samsung_logo_color.png" style="height: 95px; position: absolute; top: 0px; right: 27.075px;">
-                <div style="height: 95px; -webkit-text-fill-color: white; color: white; position: absolute; font-size: 27.075px; top: 31.5875px; right: 379.05px;">
-                    GET THE TRIAL VERSION
-                </div>
-                <img src="./images/logo.png" style="height: 72.2px; position: absolute; top: 9.025px; left: 27.075px;">
-                <div style="height: 54.15px; font-size: 54.15px; position: absolute; left: 106.495px; top: 9.025px; -webkit-text-fill-color: white; color: white;">
-                    INK&amp;PAPER
-                </div>
-</a></div><a href="http://www.samsungapps.com/appquery/appDetail.as?appId=com.inkandpaper.trial">
-<div style="width: 1920px; height: 483.684px; top: 100px; position: relative;">
-    <img src="./images/banner.png" style="position: absolute; width: 1920px;">
-    <img src="./images/subtitle.png" style="position: absolute; width: 1444px; left: 180.5px; top: 342.668px;"></div>
-<div style="position: relative; top: 0px; margin-top: 150px; width: 1920px; height: 902.5px;">
-    <div style="position: absolute; top: 132.273px; left: 90.25px; max-width: 722px; font-style: normal; font-size: 36.1px; text-align: left; line-height: 72.2px; -webkit-text-fill-color: black; color: black;">
+<div id="header" style="position: relative; width: 1920px; height: 95px; z-index: 2; background-color: rgba(200, 200, 200, 1);">
+    <div id="get_trial" style="height: 95px; -webkit-text-fill-color: white; color: white; position: absolute; font-size: 27.075px; top: 31.5875px; right: 379.05px;">
+        GET THE TRIAL VERSION
+    </div>
+    <img id="logo" src="images/ink&amp;paper_logo.png" style="height: 72.2px; position: absolute; top: 9.025px; left: 27.075px;">
+    <div id="inkandpaper" style="height: 54.15px; font-size: 54.15px; position: absolute; left: 106.495px; top: 9.025px; -webkit-text-fill-color: white; color: white;">
+        INK&amp;PAPER
+    </div>
+    <a href="http://play.google.com/store/apps/details?id=com.inkandpaper.trial">
+        <img id="google_play" onclick="window.ga('send', 'event', 'trial_app_link_clicked', 'google_play', 'https://inkandpaper-app.github.io/website/', 1);" src="./images/google_play_logo_color.png" style="height: 95px; position: absolute; top: 0px; right: 261.725px;"></a>
+    <a href="http://www.amazon.com/gp/mas/dl/android?p=com.inkandpaper.trial">
+        <img id="amazon" onclick="window.ga('send', 'event', 'trial_app_link_clicked', 'amazon', 'https://inkandpaper-app.github.io/website/', 1);" src="./images/amazon_logo_color.png" style="height: 95px; position: absolute; top: 0px; right: 144.4px;"></a>
+    <a href="http://www.samsungapps.com/appquery/appDetail.as?appId=com.inkandpaper.trial">
+        <img id="samsung" onclick="window.ga('send', 'event', 'trial_app_link_clicked', 'samsung', 'https://inkandpaper-app.github.io/website/', 1);" src="./images/samsung_logo_color.png" style="height: 95px; position: absolute; top: 0px; right: 27.075px;"></a>
+</div>
+<div id="title" style="width: 1920px; height: 483.684px; top: 100px; position: relative;">
+    <img id="banner" src="images/banner.png" style="position: absolute; width: 1920px;">
+    <img id="subtitle" src="./images/subtitle.png" style="position: absolute; width: 1444px; left: 180.5px; top: 342.668px;"></div>
+<div id="div1" style="position: relative; top: 0px; margin-top: 150px; width: 1920px; height: 902.5px;">
+    <div id="text1" style="position: absolute; top: 132.273px; left: 90.25px; max-width: 722px; font-style: normal; font-size: 36.1px; text-align: left; line-height: 72.2px; -webkit-text-fill-color: black; color: black;">
         Write on your Android device smootly as you would with a pen on the paper. Seven different types of customizable
         strokes will provide you a whole range of possibilities. The digital ink algorithm is entirely vector based:
         your pages will never lose details.
     </div>
-    <img src="./images/pen.png" style="position: absolute; width: 315.875px; left: 293.312px;">
+    <img id="image1" src="./images/pen.png" style="position: absolute; width: 315.875px; left: 293.312px;">
 </div>
 
-<div style="background-color: rgb(182, 220, 0); position: relative; width: 1920px; height: 956.65px; margin-top: -100px;">
-    <img src="./images/tablet1.png" style="position: absolute; width: 812.25px; top: 199.134px; left: 45.125px;">
-    <div style="position: absolute; top: 132.273px; right: 90.25px; max-width: 722px; font-style: normal; font-size: 36.1px; text-align: left; line-height: 72.2px; -webkit-text-fill-color: black; color: black;">
+<div id="div2" style="background-color: rgb(182, 220, 0); position: relative; width: 1920px; height: 956.65px; margin-top: -100px;">
+    <img id="image2" src="images/tabletA.png" style="position: absolute; width: 812.25px; top: 199.134px; left: 45.125px;">
+    <div id="text2" style="position: absolute; top: 132.273px; right: 90.25px; max-width: 722px; font-style: normal; font-size: 36.1px; text-align: left; line-height: 72.2px; -webkit-text-fill-color: black; color: black;">
         Unleash your creativity by adding typedtexts and geometrical shapes to your manuscripts. The latter are
         immediately recognized and can be modified through a versatile user interface. You may also need to import
         external images: the supported formats are PDF (full vector based), PNG and JPEG. The images are embedded in the
         document during the exportation process, always ensuring the best possible result.
     </div>
 </div>
-<div style="position: relative; margin-top: 180.5px; width: 1920px; height: 667.85px;">
-    <div style="position: absolute; top: 132.273px; left: 90.25px; max-width: 722px; font-style: normal; font-size: 36.1px; text-align: left; line-height: 72.2px; -webkit-text-fill-color: black; color: black;">
+<div id="div3" style="position: relative; margin-top: 180.5px; width: 1920px; height: 667.85px;">
+    <div id="text3" style="position: absolute; top: 132.273px; left: 90.25px; max-width: 722px; font-style: normal; font-size: 36.1px; text-align: left; line-height: 72.2px; -webkit-text-fill-color: black; color: black;">
         Copy, cut, paste, zoom, rotate, flip, stretch any on-screen object, and use layers to achieve overlap and
         transparency effects. With these tools, everything will be exactly as you want it.
     </div>
-    <img src="./images/cut_paste_layers.png" style="position: absolute; width: 315.875px; left: 293.312px;"></div>
-<div style="background-color: rgb(182, 220, 0); position: relative; width: 1920px; height: 722px; margin-top: 0px;"><img src="./images/tablet2.png" style="position: absolute; width: 812.25px; top: 81.8094px; left: 45.125px;">
-    <div style="position: absolute; top: 132.273px; right: 90.25px; max-width: 722px; font-style: normal; font-size: 36.1px; text-align: left; line-height: 72.2px; -webkit-text-fill-color: black; color: black;">
+    <img id="image3" src="./images/cut_paste_layers.png" style="position: absolute; width: 315.875px; left: 293.312px;"></div>
+<div id="div4" style="background-color: rgb(182, 220, 0); position: relative; width: 1920px; height: 722px; margin-top: 0px;">
+    <img id="image4" src="images/tabletB.png" style="position: absolute; width: 812.25px; top: 81.8094px; left: 45.125px;">
+    <div id="text4" style="position: absolute; top: 132.273px; right: 90.25px; max-width: 722px; font-style: normal; font-size: 36.1px; text-align: left; line-height: 72.2px; -webkit-text-fill-color: black; color: black;">
         Keep your notes organised in a library, grouping them into folders. Rotate, flip, replace the background and
         choose the export area of any page. Move or copy pages from one notepad to another, or notepads from one folder
         to another.
     </div>
 </div>
-<div style="position: relative; margin-top: 180.5px; width: 1920px; height: 541.5px;">
-    <div style="position: absolute; top: 151.169px; left: 90.25px; max-width: 722px; font-style: normal; font-size: 36.1px; text-align: left; line-height: 72.2px; -webkit-text-fill-color: white; color: white;">
+<div id="div5" style="position: relative; margin-top: 180.5px; width: 1920px; height: 541.5px;">
+    <div id="text5" style="position: absolute; top: 151.169px; left: 90.25px; max-width: 722px; font-style: normal; font-size: 36.1px; text-align: left; line-height: 72.2px; -webkit-text-fill-color: white; color: white;">
         The trial version allows you to import and write on PDF, PNG, and JPEG files. By upgrading to the full version,
         you will be able to export notes in the same formats, and create a backup copy of any library section.
     </div>
-    <img src="./images/backup_pdf.png" style="position: absolute; width: 361px; left: 270.75px;"></div>
-</a><div style="background-color: rgb(182, 220, 0); position: relative; width: 1920px; height: 180.5px; margin-top: 180.5px;"><a href="http://www.samsungapps.com/appquery/appDetail.as?appId=com.inkandpaper.trial">
-    <div style="position: absolute; left: 90.25px; max-width: 1624.5px; font-style: normal; font-size: 36.1px; text-align: left; line-height: 72.2px; -webkit-text-fill-color: black; color: black;">
+    <img id="image5" src="./images/backup_pdf.png" style="position: absolute; width: 361px; left: 270.75px;"></div>
+<div id="div6" style="background-color: rgb(182, 220, 0); position: relative; width: 1920px; height: 180.5px; margin-top: 180.5px;">
+    <div id="text6" style="position: absolute; left: 90.25px; max-width: 1624.5px; font-style: normal; font-size: 36.1px; text-align: left; line-height: 72.2px; -webkit-text-fill-color: black; color: black;">
         For a video tutorial, where the most common features of the app are shown, check these two links:
     </div>
-    </a><a href="https://www.youtube.com/watch?v=n8vdanFcmd4&amp;index=1&amp;list=PL3VL6s-M7yoeFSHGs-Z2qJdVV_WcdMuy6&amp;t" style="font-size: 36.1px; -webkit-text-fill-color: white; color: white; background-color: rgb(150, 150, 150); padding: 18.05px; border-radius: 18.05px; text-decoration: none; position: absolute; top: 72.2px; left: 722px;">LIBRARY</a>
-    <a href="https://www.youtube.com/watch?v=7EXMg9Q1Q_g&amp;index=2&amp;list=PL3VL6s-M7yoeFSHGs-Z2qJdVV_WcdMuy6" style="font-size: 36.1px; -webkit-text-fill-color: white; color: white; background-color: rgb(150, 150, 150); padding: 18.05px; border-radius: 18.05px; text-decoration: none; position: absolute; top: 72.2px; left: 902.5px;">EDITOR</a>
+    <a id="youtube_link_1" href="https://www.youtube.com/watch?v=n8vdanFcmd4&amp;index=1&amp;list=PL3VL6s-M7yoeFSHGs-Z2qJdVV_WcdMuy6&amp;t" onclick="window.ga('send', 'event', 'tutorial_link_clicked', 'library', 'https://inkandpaper-app.github.io/website/', 1);" style="font-size: 36.1px; -webkit-text-fill-color: white; color: white; background-color: rgb(150, 150, 150); padding: 18.05px; border-radius: 18.05px; text-decoration: none; position: absolute; top: 72.2px; left: 722px;">LIBRARY</a>
+    <a id="youtube_link_2" href="https://www.youtube.com/watch?v=7EXMg9Q1Q_g&amp;index=2&amp;list=PL3VL6s-M7yoeFSHGs-Z2qJdVV_WcdMuy6" onclick="window.ga('send', 'event', 'tutorial_link_clicked', 'editor', 'https://inkandpaper-app.github.io/website/', 1);" style="font-size: 36.1px; -webkit-text-fill-color: white; color: white; background-color: rgb(150, 150, 150); padding: 18.05px; border-radius: 18.05px; text-decoration: none; position: absolute; top: 72.2px; left: 902.5px;">EDITOR</a>
 </div>
-<div style="width: 1920px; height: 135.375px; z-index: 1; background-color: rgb(200, 200, 200); position: relative; top: 0px;">
+<div id="footer" style="width: 1920px; height: 135.375px; z-index: 1; background-color: rgb(200, 200, 200); position: relative; top: 0px;">
     <a href="https://www.facebook.com/pg/HandwritePDFNotes/posts/?v=wall">
-        <img src="./images/facebook_color.png" style="height: 67.6875px; position: absolute; right: 121.838px; top: 33.8438px;">
-        </a><a href="mailto:inkandpaper.app@gmail.com">
-            <img src="./images/mail_white.png" style="height: 67.6875px; position: absolute; right: 27.075px; top: 33.8438px;">
-</a></div><a href="mailto:inkandpaper.app@gmail.com">
-<img width="1920" height="1594" style="z-index: -1; position: absolute; top: 95px;" src="./images/background1.png">
-<img width="1920" height="1236" style="z-index: -2; position: absolute; top: 2250px;" src="./images/background2.png">
-<img width="1920" height="1154" style="z-index: -3; position: absolute; top: 3940px;" src="./images/background3.png">
+        <img id="facebook" src="./images/facebook_color.png" style="height: 67.6875px; position: absolute; right: 121.838px; top: 33.8438px;"></a>
+    <a href="mailto:inkandpaper.app@gmail.com">
+        <img id="mail" src="./images/mail_white.png" style="height: 67.6875px; position: absolute; right: 27.075px; top: 33.8438px;"></a>
+</div>
+<img id="background1" width="1920" height="1594" style="z-index: -1; position: absolute; top: 95px;" src="./images/background1.png">
+<img id="background2" width="1920" height="1236" style="z-index: -2; position: absolute; top: 2250px;" src="./images/background2.png">
+<img id="background3" width="1920" height="1154" style="z-index: -3; position: absolute; top: 3940px;" src="./images/background3.png">
 
-</a></body></html>
+</body></html>
