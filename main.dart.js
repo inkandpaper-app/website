@@ -3389,13 +3389,13 @@ if(y>=x.length)return H.b(x,y)
 x=x[y].style
 v=J.S(J.a9(w,a))+"px"
 x.top=v}},
-fR:function(){var z,y,x,w,v,u,t,s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1,e2,e3,e4,e5,e6,e7,e8,e9
+fR:function(){var z,y,x,w,v,u,t,s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1,e2,e3,e4,e5,e6,e7,e8
 z=$.u
 z.toString
 if(typeof z!=="number")return z.A()
 y=z*0.05
 x=y*0.8
-w=y*0.3
+w=y*0.6
 v=y*0.45
 u=document
 t=u.querySelector("#header")
@@ -3476,8 +3476,8 @@ s=l.style
 m=C.a.h(r)+"px"
 s.top=m
 s=l.style
-m=2*w
-k=C.a.h(m+y)+"px"
+m=2*w+y
+k=C.a.h(m)+"px"
 s.right=k
 j=u.querySelector("#samsung")
 s=J.E(j)
@@ -3804,7 +3804,7 @@ r.top=s
 s=e3.style
 r=$.u
 if(typeof r!=="number")return r.A()
-r=C.a.h(r*0.4)+"px"
+r=C.a.h(r*0.37)+"px"
 s.left=r
 e4=u.querySelector("#youtube_link_2")
 s=e4.style
@@ -3822,49 +3822,48 @@ r.top=s
 s=e4.style
 r=$.u
 if(typeof r!=="number")return r.A()
-r=C.a.h(r*0.5)+"px"
+r=C.a.h(r*0.53)+"px"
 s.left=r
-e5=y*0.75
-e6=u.querySelector("#footer")
-s=e6.style
+e5=u.querySelector("#footer")
+s=e5.style
 r=C.a.h(z)+"px"
 s.width=r
-s=e6.style
+s=e5.style
 r=C.a.h(d)+"px"
 s.height=r
-s=e6.style
+s=e5.style
 r=C.a.h(y)+"px"
 s.top=r
-e7=u.querySelector("#mail")
-s=J.E(e7)
-r=s.gO(e7)
-W.x(r.a,r.b,new F.fY(e7),!1,H.r(r,0))
-s=s.gP(e7)
-W.x(s.a,s.b,new F.fZ(e7),!1,H.r(s,0))
-s=e7.style
-r=C.a.h(e5)+"px"
+e6=u.querySelector("#mail")
+s=J.E(e6)
+r=s.gO(e6)
+W.x(r.a,r.b,new F.fY(e6),!1,H.r(r,0))
+s=s.gP(e6)
+W.x(s.a,s.b,new F.fZ(e6),!1,H.r(s,0))
+s=e6.style
+r=C.a.h(y)+"px"
 s.height=r
-s=e7.style
+s=e6.style
 r=C.a.h(w)+"px"
 s.right=r
-s=e7.style
-r=(d-e5)*0.5
+s=e6.style
+r=(d-y)*0.5
 k=C.a.h(r)+"px"
 s.top=k
-e8=u.querySelector("#facebook")
-s=J.E(e8)
-s.sv(e8,"./images/facebook_white.png")
-k=s.gO(e8)
-W.x(k.a,k.b,new F.h_(e8),!1,H.r(k,0))
-s=s.gP(e8)
-W.x(s.a,s.b,new F.h0(e8),!1,H.r(s,0))
-s=e8.style
-k=C.a.h(e5)+"px"
+e7=u.querySelector("#facebook")
+s=J.E(e7)
+s.sv(e7,"./images/facebook_white.png")
+k=s.gO(e7)
+W.x(k.a,k.b,new F.h_(e7),!1,H.r(k,0))
+s=s.gP(e7)
+W.x(s.a,s.b,new F.h0(e7),!1,H.r(s,0))
+s=e7.style
+k=C.a.h(y)+"px"
 s.height=k
-s=e8.style
-m=C.a.h(m+e5)+"px"
+s=e7.style
+m=C.a.h(m)+"px"
 s.right=m
-s=e8.style
+s=e7.style
 r=C.a.h(r)+"px"
 s.top=r
 $.aE=d+e+a2+a1+0+a8+b7+b6+0+c3+d2+d1+d8+d8+d*0.1
@@ -3877,12 +3876,12 @@ u=$.aB;(u&&C.c).sj(u,0)
 u=$.b2;(u&&C.c).sj(u,0)
 $.b4=[1920,1920,1920]
 $.b3=[1594,1236,1154]
-e9=$.u
-e9.toString
+e8=$.u
+e8.toString
 u=$.aE
 if(typeof u!=="number")return u.A()
 s=u*0.3
-F.fH(["./images/background1.png","./images/background2.png","./images/background3.png"],[e9,e9,e9],[u*0.4,s,s])},
+F.fH(["./images/background1.png","./images/background2.png","./images/background3.png"],[e8,e8,e8],[u*0.4,s,s])},
 ho:{"^":"f:0;",
 $1:function(a){F.db()}},
 hp:{"^":"f:0;",
