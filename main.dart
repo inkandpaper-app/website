@@ -189,10 +189,10 @@ void addBackgrounds() {
 
   List<String> img_name = ["./images/background1.png", "./images/background2.png", "./images/background3.png"];
   background_real_width = [1920.0, 1920.0, 1920.0];
-  background_real_height = [1594.0, 1236.0, 1154.0];
+  background_real_height = [1594.0, 1236.0, 1354.0];
   double width = window_width.toDouble();
   List<double> bkg_width = [width, width, width];
-  List<double> bkg_height = [total_document_height * 0.4, total_document_height * 0.27, total_document_height * 0.33];
+  List<double> bkg_height = [total_document_height * 0.4, total_document_height * 0.29, total_document_height * 0.31];
 
   addBackgroundElements(img_name, bkg_width, bkg_height);
 }
@@ -200,7 +200,7 @@ void addBackgrounds() {
 void adaptBackgroundsHeight() {
   int m = background.length;
 
-  List<double> height = [total_document_height * 0.4, total_document_height * 0.27, total_document_height * 0.33];
+  List<double> height = [total_document_height * 0.4, total_document_height * 0.29, total_document_height * 0.31];
 
   for (int j = 0; j < m; j++) {
     if (total_document_height > window_height) {
@@ -606,8 +606,7 @@ void buildPage() {
       divider5_height +
       divider6_margin_top +
       divider6_height +
-      divider7_height +
-      footer_height*0.5;
+      divider7_height;
 
   querySelector("#background1").remove();
   querySelector("#background2").remove();
